@@ -1,0 +1,758 @@
+.our-head {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding-left: 188px;
+  margin-bottom: 71px;
+  @media screen and (max-width: 1024px) {
+    padding-left: 100px;
+  }
+  @media screen and (max-width: 1023px) {
+    padding-left: 50px;
+  }
+  @media screen and (max-width: 684px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 375px) {
+    padding-left: 25px;
+    margin-bottom: 0;
+  }
+  @media screen and (max-width: 320px) {
+    padding-left: 15px;
+  }
+}
+.our-head__title {
+    //width: 502px;
+    //height: 48px;
+    margin-right: 45px;
+    font-family: PlayfairDisplay, serif;
+    font-size: 60px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.8;
+    letter-spacing: normal;
+    text-align: left;
+    color: #212121;
+  @media screen and (max-width: 767px) {
+    font-size: 44px;
+  }
+  @media screen and (max-width: 501px) {
+    font-size: 37px;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 25px;
+  }
+}
+.our-head__text {
+  display: inline-block;
+  width: 217px;
+  height: 92px;
+  span:first-child {
+    font-family: LucidaGrande;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: left;
+    color: @light-gray;
+    @media screen and (max-width: 425px) {
+      font-size: 15px;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 13px;
+    }
+  }
+  span:last-child {
+    width: 115px;
+    height: 26px;
+    background-color: @light-yellow;
+    display: block;
+    padding-left: 6px;
+    margin-left: -7px;
+    color: @light-gray;
+    font-family: LucidaGrande;
+    @media screen and (max-width: 425px) {
+      font-size: 15px;
+      width: 100px;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 13px;
+      width: 86px;
+      height: 20px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    width: 185px;
+  }
+
+}
+
+
+.products {
+   //display: flex;
+   //justify-content: center;
+   //flex-wrap: wrap;
+}
+.product__header-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 19px 0;
+}
+.first-product {
+  //margin-right: 40px;
+}
+.product-wrap_first {
+  display: flex;
+  justify-content: flex-end;
+
+}
+.product-wrap {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
+}
+.product {
+  display: block;
+  width: 360px;
+  height: 512px;
+  border-radius: 8px;
+  transition: 0.2s all ease;
+  &:hover {
+    background-color: @dark-yellow;
+    .product__header {
+      a{
+        background-color: white;
+        color: @dark-yellow;
+      }
+    }
+  }
+}
+.product__header {
+  a {
+    display: block;
+    color: white;
+    width: 143px;
+    border-radius: 4px;
+    background-color: @dark-yellow;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 3px 0 6px;
+    transition: 0.2s all ease;
+    &:hover {
+      text-decoration: none;
+
+      //background-color: white;
+    }
+  }
+}
+
+.product__img-wrap {
+  display: flex;
+  justify-content: center;
+  margin-left: -12px;
+}
+.product__img {
+  width: 118px;
+  height: 238px;
+  //box-shadow: -14px 18px 25px 0 rgba(0, 0, 0, 0.5), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  &_beacon{
+    width: 156px;
+  }
+}
+
+.product__desc {
+  margin-top: 40px;
+  padding-left: 49px;
+}
+.desc__text-wrap {
+  //width: 170px;
+  width: 207px;
+  height: 128px;
+}
+.desc__mini {
+  //width: 88px;
+  //height: 13px;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  //font-family: Montserrat;
+  margin-bottom: 5px;
+  font-size: 10px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  text-align: center;
+  color: @light-gray;
+}
+.desc__title, .desc__text {
+
+  display: block;
+  font-family: LucidaGrande;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #212121;
+}
+.desc__title {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.45;
+}
+
+//======================== about section ======================
+.about-wrap {
+  display: flex;
+  justify-content: flex-end;
+  @media screen and (max-width: 992px) {
+    justify-content: center;
+  }
+}
+.about {
+  h2 {
+    font-family: PlayfairDisplay-Bold;
+    font-size: 36px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: @black;
+    margin-bottom: 32px;
+    @media screen and (max-width: 992px) {
+      text-align: center;
+    }
+    @media screen and (max-width: 768px) {
+      text-align: left;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+  }
+  p {
+    width: 355px;
+    height: 266px;
+    font-family: 'Open Sans', sans-serif;
+    //font-family: OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: left;
+    color: @light-gray;
+    @media screen and (max-width: 992px) {
+      text-align: center;
+    }
+    @media screen and (max-width: 768px) {
+      text-align: left;
+    }
+    @media screen and (max-width: 320px) {
+      width: 100%;
+      text-align: justify;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    width: 100%;
+  }
+}
+
+//============== offer section ============
+.info {
+  margin-top: 130px;
+  @media screen and (max-width: 992px) {
+    margin-top: 30px;
+  }
+}
+.circle {
+  background-color: @dark-yellow;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.3s all ease;
+}
+.ico {
+  position: absolute;
+  left: 18px;
+  bottom: 16px;
+}
+
+.offer__item {
+  width: 504px;
+  height: 141px;
+  border-radius: 8px;
+  transition: 0.3s all ease;
+  &:hover {
+    background-color: @dark-yellow ;
+    .circle {
+      background-color: white;
+    }
+  }
+  @media screen and (max-width: 510px) {
+    width: 473px;
+  }
+  @media screen and (max-width: 475px) {
+    width: 415px;
+  }
+  @media screen and (max-width: 425px) {
+    width: 367px;
+    justify-content: inherit;
+  }
+  @media screen and (max-width: 375px) {
+    width: 340px;
+  }
+  @media screen and (max-width: 320px) {
+    width: 100%;
+  }
+}
+.offer__item_doc {
+  margin-top: 35px;
+  position: relative;
+  cursor: pointer;
+  &:before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 337.9px;
+    position: absolute;
+    top: -18px;
+    left: 25px;
+    border: solid 1px #d1d1d1;
+    @media screen and (max-width: 375px) {
+      width: 300px;
+    }
+    @media screen and (max-width: 320px) {
+      width: 270px;
+    }
+  }
+  display: block;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+}
+.offer__item__right {
+  h3 {
+    width: 363px;
+    height: 32px;
+    font-family: PlayfairDisplay;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    text-align: left;
+    color: @black;
+    @media screen and (max-width: 560px) {
+      width: 350px;
+    }
+    @media screen and (max-width: 475px) {
+      font-size: 17px;
+      margin-bottom: 0;
+      width: 263px;
+    }
+    @media screen and (max-width: 375px) {
+      width: 256px;
+    }
+    @media screen and (max-width: 320px) {
+      width: 236px;
+      font-size: 15px;
+    }
+
+  }
+  @media screen and (max-width: 475px) {
+    padding-left: 25px;
+  }
+  @media screen and (max-width: 320px) {
+    padding-left: 22px;
+  }
+}
+.offer_text {
+  display: inline-block;
+  width: 271px;
+  height: 51px;
+  span {
+    color: @light-gray;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: left;
+    @media screen and (max-width: 475px) {
+      font-size: 12px;
+    }
+  }
+  span:first-child {
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+  }
+  span:last-child {
+    width: 232px;
+    height: 26px;
+    background-color: @light-yellow;
+    display: block;
+    @media screen and (max-width: 475px) {
+      width: 205px;
+      height: 20px;
+    }
+    //padding-left: 6px;
+    //margin-left: -7px;
+    font-family: LucidaGrande;
+  }
+  @media screen and (max-width: 320px) {
+    width: 235px;
+  }
+}
+//.offer__item__left, offer__item__right {
+//  display: flex;
+//  justify-content: center;
+//}
+.collaboration-offer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px 0;
+  @media screen and (max-width: 425px) {
+    width: 370px;
+    justify-content: inherit;
+  }
+  @media screen and (max-width: 375px) {
+    width: 340px;
+  }
+  @media screen and (max-width: 320px) {
+    width: 100%;
+    padding: 8px 0;
+  }
+
+}
+.doc-text {
+  color: @light-gray;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: normal;
+  text-align: left;
+}
+.offer-wrap {
+  @media screen and (max-width: 992px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+//======================= partner form ===================
+.partner-form__header {
+  h2 {
+    font-family: PlayfairDisplay;
+    font-size: 36px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: @black;
+    @media screen and (max-width: 375px) {
+      font-size: 26px;
+    }
+  }
+  span {
+    margin-bottom: 29px;
+    display: inherit;
+    font-family: LucidaGrande;
+    font-size: 22px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    text-align: center;
+    color: #9fa3a7;@media screen and (max-width: 375px) {
+    font-size: 16px;
+  }
+  }
+}
+.partner-form__form {
+  form {
+    input {
+      border-radius: 4px;
+      width: 320px;
+      height: 45px;
+      background-color: #fafafa;
+      border: solid 1px #e6e6e6;
+
+      font-family: LucidaGrande;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.86;
+      letter-spacing: normal;
+      text-align: left;
+      padding: 0 20px;
+      color: #292929;
+      &:focus::-webkit-input-placeholder {
+        color: #292929;
+      }
+      &:first-child {
+        margin-right: 18px;
+        @media screen and (max-width: 667px) {
+            margin-right: 0px;
+        }
+      }
+      &:nth-child(2) {
+        @media screen and (max-width: 667px) {
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+}
+.form-input {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 23px;
+  .btn-yellow {
+    margin-top: 25px;
+  }
+
+}
+
+//======================= why beacon? =======================
+.why-head {
+  h2 {
+    text-align: center;
+    margin-top: 135px;
+    margin-bottom: 56px;
+    @media screen and (max-width: 992px) {
+      margin-top: 90px;
+      margin-bottom: 30px;
+    }
+    @media screen and (max-width: 375px) {
+      margin-top: 65px;
+    }
+  }
+}
+.why__item__title {
+  margin-bottom: 17px;
+  h4 {
+    text-transform: uppercase;
+    font-family: PlayfairDisplay;
+    font-size: 10px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    text-align: center;
+    color: @black;
+  }
+
+}
+.why__item {
+  @media screen and (max-width: 992px) {
+    margin-top: 30px;
+  }
+}
+.why__item__img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 19px;
+}
+.why__item__title, .why__item__text {
+  text-align: center;
+}
+.why__item__text {
+  p {
+    display: inline-block;
+    width: 224px;
+    font-family: LucidaGrande;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: center;
+    color: @light-gray;
+  }
+}
+
+//================================= MODAL ======================
+//.modal {
+//  display: flex;
+//  align-items: center;
+//}
+.modal-dialog{
+  width: 100%;
+  padding-left: 15px;
+}
+.modal-content {
+  padding: 90px 0;
+}
+
+.success-circle-modal {
+  display: flex;
+  justify-content: center;
+}
+.circle-modal {
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+  border: 2px solid @dark-yellow;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  &:before {
+    //display: block;
+    //position: absolute;
+    //content: '';
+    //width: 37px;
+    //height: 27px;
+    ////background: @dark-yellow;
+    //border-left: 2px solid @dark-yellow;
+    //border-bottom: 2px solid @dark-yellow;
+    //transform: rotate(-45deg);
+
+  }
+}
+.circle-modal__img {
+  width: 37px;
+  height: 27px;
+  //background: @dark-yellow;
+  border-left: 3px solid @dark-yellow;
+  border-bottom: 3px solid @dark-yellow;
+  transform: rotate(-45deg);
+  margin-top: 15px;
+  margin-left: 3px;
+}
+.modal-text {
+  margin-top: 100px;
+  margin-bottom: 90px;
+  p, h4 {
+    font-family: PlayfairDisplay;
+    font-size: 36px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #212121;
+  }
+  h4 {
+    font-weight: 900;
+  }
+  p {
+    width: 568px;
+  }
+}
+.modal-text__desc {
+  display: flex;
+  justify-content: center;
+}
+.modal-button {
+  display: flex;
+  justify-content: center;
+  button {
+    border-radius: 24px;
+    border: solid 3px #ffc80a;
+    background-color: transparent;
+    color: #212121;
+    font-family: LucidaGrande;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    text-align: center;
+    padding: 9px 35px;
+    &:hover {
+      background: @dark-yellow;
+      color: white;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+
+//================================= form validation errors styles ===========================
+.form-input___name {
+  @media screen and (max-width: 705px) {
+    margin-bottom: 30px;
+  }
+}
+.form-input___name, .form-input___surname, .form-input___telephone, .call-form__name, .call-form__tel, .call-form__newpost {
+  input.error {
+    border: 1px solid #fc6c6c;
+  }
+  input:focus {
+    border: navajowhite;
+  }
+  position: relative;
+  label {
+    z-index: 10;
+    position: absolute;
+    display: block;
+    border: 1px solid #212121;
+    padding: 5px 10px;
+    border-radius: 4px;
+    bottom: -45px;
+    background: white;
+    //color: #9fa3a7;
+    font-weight: 400;
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      left: 20px;
+      bottom: 30px;
+      border: 10px solid transparent;
+      border-bottom: 10px solid #212121;
+
+    }
+    &::after {
+      border-bottom: 10px solid #ffffff;
+      bottom: 29px;
+    }
+  }
+}
+.call-form__name, .call-form__tel  {
+  label {
+    @media screen and (max-width: 992px) {
+      bottom: -27px;
+    }
+
+  }
+}
+
+.call-form__newpost {
+  label {
+    bottom: -22px;
+  }
+}
+

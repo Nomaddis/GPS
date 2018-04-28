@@ -1,0 +1,85 @@
+/*
+* DECLARE VARIABLES
+*/
+@background: #fffff;
+@light-gray: #9fa3a7;
+@dark-gray: #6c6c6c;
+@black: #212121;
+@red: #fb0c0c;
+
+@light-yellow: #f8ff44;
+@dark-yellow: #ffc80a;
+
+/*
+ * Include sprites here
+ */
+
+
+// ==================  CUSTOM CONTAINER ==============
+//.container {
+//  padding-right: 15px;
+//  padding-left: 15px;
+//  margin-right: auto;
+//  margin-left: auto;
+//  @media (min-width: 768px) {
+//    width: 740px;
+//  }
+//  @media (min-width: 992px) {
+//    width: 970px;
+//  }
+//  @media (min-width: 1200px) {
+//    width: 1170px;
+//  }
+//}
+
+
+// =================== FONTS ==========================
+//@font-face {
+//  font-family: PlayfairDisplay; /* Имя шрифта */
+//  src: url(../fonts/PlayfairDisplay-Regular.otf); /* Путь к файлу со шрифтом */
+//}
+
+@font-face {
+  font-family: LucidaGrande; /* Имя шрифта */
+  src: url("../fonts/Lucida_Grande_Regular.ttf"); /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: PlayfairDisplay-Bold;
+  src: url("../fonts/PlayfairDisplay-Bold.ttf");
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+@font-face {
+  font-family:"Montserrat-Bold";
+  src:url("../fonts/Montserrat-Bold.eot?")
+  format("eot"),url("../fonts/Montserrat-Bold.woff")
+  format("woff"),url("../fonts/Montserrat-Bold.ttf")
+  format("truetype"),
+  url("../fonts/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
+.btn {
+  border-radius: 100px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  text-align: center;
+  padding: 17px 35px;
+  color: white;
+  background-color: @dark-yellow;
+  transition: 0.3s all ease;
+  text-transform: uppercase;
+  &:hover {
+    color: @dark-gray;
+  }
+  &:focus, &:active {
+    outline: none !important;
+    border-style: none !important;
+  }
+}

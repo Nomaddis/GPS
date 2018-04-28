@@ -1,0 +1,34 @@
+.call-form
+    .call-form__head
+        h2 Заказать с бесплатной доставкой по Украине.
+        span заполните форму и мы сейчас же перезвоним Вам
+    .call-form__body.partner-form__form
+        form.buy-form
+            .form_body
+                .row
+                    .col-md-6
+                        .input-form
+                            .input-form_wrap
+                                .call-form__name
+                                    input(type="text" placeholder="Ваше имя" required name="call_name")
+                                .call-form__tel
+                                    input(type="text" placeholder="Телефон" required name="call_tel")
+                    .col-md-6
+                        .radio_wrap
+                            .radio_inner
+                                .form-row
+                                    label
+                                        input.radio.radio-manual(type='radio', name='radio-test' value="manual")
+                                        span.radio-custom
+                                        span.label Обычная
+                                .form-row
+                                    label
+                                        input.radio.radio-NP(type='radio', name='radio-test' value="NP" checked="checked")
+                                        span.radio-custom
+                                        span.label.label_checked Заказать на отделение Новой почты
+                                .form-row
+                                    .call-form__newpost
+                                        input(type="text" placeholder="Укажите ваш город и отделение" name="department").call-form_dep
+
+            .form_submit
+                button(type="submit").btn отправить

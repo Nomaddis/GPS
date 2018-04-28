@@ -1,0 +1,268 @@
+main
+    .container
+        .beacon-head
+            .beacon-head__title
+                h1.product-title Beacon Pocket
+            .beacon-head__desc
+                span Powerbank cо встроенным GPS-навигатором и возможностью отслеживать перемещение
+
+        section
+            .row
+                .pocket-wrap
+                    .col-md-8.col-sm-6
+                        .pocket
+                            .pocket-item
+                                .pocket-img
+                                    img(src="../img/pocket.png" alt="Beackon Pocket")
+                            .pocket-item
+                                .pocket-btn-wrap
+                                    .pocket-btn
+                                        a.btn(href="#") Заказать сейчас
+
+                    .col-md-4.col-sm-6
+                        .product-desc-wrap
+                            .product-desc
+                                .product-desc__title
+                                    span Характеристики
+                                .product-desc__spec
+                                    table.product-desc__spec__table
+                                        tr
+                                            td.product-desc__spec__title Объем Powerbank
+                                            td 10 000 mAh
+                                        tr
+                                            td Аккумулятор треккера
+                                            td 10A;
+                                        tr
+                                            td Время работы с периодом:
+                                            td
+                                        tr
+                                            td раз в сутки
+                                            td 5 лет;
+                                        tr
+                                            td раз в час
+                                            td 100 дней;
+                                        tr
+                                            td on-line
+                                            td 14 дней;
+                                        tr
+                                            td Габариты
+                                            td 150х70х15 мм;
+                                        tr
+                                            td Вес
+                                            td 180 г.
+
+                                .product-desc__price
+                                    .product-desc__price__old
+                                        span 230
+                                    .product-desc__price__new
+                                        span 200
+                                        span uah
+            .pocket-btn-wrap.pocket-btn-wrap-mobile
+                .pocket-btn
+                    a.btn(href="#") Заказать сейчас
+
+        section
+            .possibility
+                .row
+                    .col-md-6
+                        .about-wrap
+                            .about
+                                h2
+                                    | Возможности
+                                    //br
+                                    | устройства
+                                p
+                                    | Устройство наблюдения за подвижными объектами "Beacon Pocket" применяется для решения задач навигации и контроля за удаленным объектом.
+                                    br
+                                    | Устройство наблюдения предназначен для установки на любой движущийся или удаленный стационарный объект с целью определения координат, скорости, направления движения и инших данных, и передачи этих данных в диспетчерский центр.
+                    .col-md-6
+                        .offer-wrap
+                            .offer
+                                .offer__item.collaboration-offer.offer__item_beacon
+                                    .offer__item__left
+                                        .circle
+                                            .pen.ico
+                                                img(src="img/webcam.png" alt="pen")
+                                    .offer__item__right
+                                        h3 Отслеживание перемещения человека
+                                .offer__item.collaboration-offer.offer__item_doc.offer__item_beacon
+                                    .offer__item__left.doc-title
+                                        .circle
+                                            .pen.ico
+                                                img(src="img/telkey.png" alt="pen")
+                                    .offer__item__right.doc-text
+                                        h3 Возможность отслеживания компьютера (вместе с powerbank) или телефона в случае кражи
+                                .offer__item.collaboration-offer.offer__item_doc
+                                    .offer__item__left.doc-title
+                                        .circle
+                                            .pen.ico
+                                                img(src="img/telplay.png" alt="pen")
+                                    .offer__item__right.doc-text
+                                        h3 Управление с помощью приложения
+        section.info-graphic
+            .row
+                .col-sm-4
+                    .info-graphic__left-wrap.info-graphic__left-wrap_pocket
+                        .info-graphic__left.info-graphic__left_pocket
+                            .grafic__title.grafic__title_gps
+                                h4 Высокая точность определения местоположения
+                            .grafic__title.grafic__title_security
+                                h4 Работа в режиме "Охраны"
+                .col-sm-4
+                    .info-graphic__img.info-graphic__img_pocket
+                        .img-cont
+                            img(src="img/pocket.png")
+                .col-sm-4
+                    .info-graphic__right-wrap.info-graphic__right-wrap_pocket
+                        .info-graphic__right.info-graphic__right_pocket
+                            .grafic__title.grafic__title_radar
+                                h4 Работа в режиме “маячка”
+                            .grafic__title.grafic__title_robbery
+                                h4 Не вызывает подозрения у грабителя
+                            .grafic__title.grafic__title_device
+                                h4 Большой объём заряда устройства
+                            .grafic__title.grafic__title_wireless
+                                h4 Беспроводная настройка
+
+        section
+            include form
+
+        section
+            .target
+                .target__title
+                    h2 Кому будет полезно?
+                .target__body
+                    .row
+                        .targets
+                            .col-md-6
+                                .targets__item-wrap
+                                    .targets__item
+                                        .targets__item__img.targets__item__img_tv
+                                            .img-cont
+                                                img(src="img/tv.png" alt="tv")
+                                        .targets__item__text
+                                            .targets__item__title
+                                                span Для путешественников, владельцев телефонов и ноутбуков и т.д
+                                            .targets__item__desc
+                                                p В случае кражи или потери техники - Вы всегда сможете определить ее точное местонахождение на карте и вернуть потеряный девайс.
+                            .col-md-6
+                                .targets__item-wrap
+                                    .targets__item.targets__item_coin
+                                        .targets__item__img.targets__item__img_coin
+                                            .img-cont
+                                                img(src="img/2-euro-coin-fi-serie-1.png" alt="tv")
+                                        .targets__item__text
+                                            .targets__item__title
+                                                span Бизнес, в котором важен контроль перемещения сотрудников или грузов
+                                            .targets__item__desc
+                                                p Beacon Pocket поможет предпринимателям отслеживать эффективность работы сотрудников и техники, задействованных на их предприятии.
+
+        section
+            .problems__title
+                h2 Проблемы китайских устройств
+            .problems
+                .why__item
+                    .why__item__img
+                        .circle
+                            .ico
+                                img(src="img/store.png" alt="low quality")
+                    .why__item__title
+                        h4
+                            | НИЗКОЕ
+                            br
+                            | КАЧЕСТВО
+                            br
+                            |  ПРОДУКЦИИ
+
+                .why__item
+                    .why__item__img
+                        .circle
+                            .ico
+                                img(src="img/precision.png" alt="GPS low quality")
+                    .why__item__title
+                        h4
+                            | СБОЙ
+                            br
+                            | В ТОЧНОСТИ
+                            br
+                            | ОПРЕДЕЛЕНИЯ ДАННЫХ
+
+                .why__item
+                    .why__item__img
+                        .circle
+                            .ico
+                                img(src="img/tellow.png" alt="low cicle")
+                    .why__item__title
+                        h4
+                            | КОРОТКИЙ
+                            br
+                            | ЦИКЛ
+                            br
+                            | ЭНЕРГОСБЕРЕЖЕНИЯ
+
+                .why__item
+                    .why__item__img
+                        .circle
+                            .ico
+                                img(src="img/cross.png" alt="cross")
+                    .why__item__title
+                        h4
+                            | ОГРАНИЧЕНЫЙ
+                            br
+                            | НАБОР
+                            br
+                            | ВОЗМОЖНОСТЕЙ
+
+                .why__item
+                    .why__item__img
+                        .circle
+                            .ico
+                                img(src="img/tools.png" alt="tools")
+                    .why__item__title
+                        h4
+                            | РАБОТА
+                            br
+                            | ТОЛЬКО В
+                            br
+                            | ОРГАНИЧЕНОЙ ЗОНЕ
+
+                .china
+                    span Китай
+
+        section
+            include form
+
+        section
+            .get-it
+                .row
+                    .col-sm-6
+                        .iphone_img-wrap
+                            .iphone_img
+                                .img-cont
+                                    img.iphone(src="img/iphoneX.png")
+                                .company-img
+                                    img(src="img/photo-2018-03-13-15-02-55.png")
+                    .col-sm-6
+                        .market-butoons-wrap
+                            .market-butoons
+                                .market__android
+                                    a(href='https://itunes.apple.com/ru/app/geliosmobile/id999837601?mt=8', target='_blank')
+                                        img(src='img/android.png', alt='Get on Google Play')
+                                .market__iphone
+                                    a(href='https://play.google.com/store/apps/details?id=ru.soft.gelios.mobile&hl=ru', target='_blank')
+                                        img(src='img/apple.png', alt='Get on Google Play')
+        //Modal
+        #callMessage.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+            .modal-dialog(role='document')
+                .modal-content
+                    .success-circle-modal
+                        .circle-modal
+                            .circle-modal__img
+                                //img(src="img/success.png" alt="success")
+                    .modal-text
+                        h4 Спасибо!
+                        .modal-text__desc
+                            p Спасибо! Мы отправим ваш заказ в течении дня
+                            //p Специалист свяжется с Вами в ближайшее время!
+                    .modal-button
+                        button.btn(type='button', data-dismiss='modal') Назад

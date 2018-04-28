@@ -1,0 +1,153 @@
+main
+    .container
+        .our-head#our-products
+            h1.our-head__title Наша продукция
+            span.our-head__text
+                span Товары, которые помогут упростить
+                span вашу жизнь
+        section.our-products
+            .products
+                .row
+                    .col-sm-6
+                        .product-wrap.product-wrap_first
+                            .product.first-product
+                                .product__header-wrap
+                                    .product__header
+                                        a(href="/pocket.html") Подробнее
+                                .product__img-wrap
+                                    a(href="/pocket.html")
+                                        .product__img
+                                            .img-cont
+                                                img(src="img/product1.png" alt="Beacon Pocket")
+                                .product__desc
+                                    span.desc__mini Технологии
+                                    .desc__text-wrap
+                                        span.desc__title Beacon Pocket
+                                        span.desc__text Powerbank со встроенным GPS-треккером
+                    .col-sm-6
+                        .product-wrap
+                            .product
+                                .product__header-wrap
+                                    .product__header
+                                        a(href="/car.html") Подробнее
+                                .product__img-wrap
+                                    a(href="/car.html")
+                                        .product__img.product__img_beacon
+                                            .img-cont
+                                                img(src="img/product2.png" alt="Beacon Car")
+                                .product__desc
+                                    span.desc__mini Автомобиль
+                                    .desc__text-wrap
+                                        span.desc__title Beacon Car
+                                        span.desc__text Противоугонное автомобильное реле с GPS-навигацией
+        section.info#info
+            .row
+                .col-md-6
+                    .about-wrap
+                        .about
+                            h2 О компании
+                            p
+                             | Наша команда занимается разработками и производством в области высоких технологий и передачи данных. Цель наших проектов - сделать жизнь людей удобнее и технологичнее. Производимые нами продукты могу быть использованы для абсолютно любых целей и решать многие проблемы. Вы будете иметь возможность контроллировать перемещение сотрудников, детей, автомобилей и т.д.
+                .col-md-6
+                    .offer-wrap
+                        .offer
+                            .offer__item.collaboration-offer
+                                .offer__item__left
+                                    .circle
+                                        .pen.ico
+                                            img(src="img/pen.svg" alt="pen")
+                                .offer__item__right
+                                    h3 Предложения по сотрудничеству
+                                    span.offer_text
+                                        span Возможное сотрудничество по схемам
+                                        span дистрибьюции и дропшиппинга
+                            a(href="img/pocket.png" download title="Скачать информацию по сотрудничеству").offer__item.collaboration-offer.offer__item_doc
+                                .offer__item__left.doc-title
+                                    .circle
+                                        .pen.ico
+                                            img(src="img/cloud.svg" alt="pen")
+                                .offer__item__right.doc-text
+                                    h3 Документация
+                                    span Информация по сотрудничеству
+        section.partner-form#partner-form
+            .partner-form__header
+                h2 Стать партнёром
+                span Заполните форму и мы расскажем Вам все о сотрудничестве
+                //button(data-toggle="modal" data-target="#partners") dfghjkl
+            .partner-form__form
+                form#form_for_partners
+                    .form-input
+                        .form-input___name
+                            input(type="text" placeholder="Имя" name="name" required)
+                        .form-input___surname
+                            input(type="text" placeholder="Фамилия" name="surname" required)
+                    .form-input
+                        .form-input___telephone
+                            input(type="text" placeholder="Телефон" name="phone" required)
+                    .form-input
+                        button(type="submit").btn.btn-yellow.btn-partners_submit отправить
+                        //data-toggle="modal" data-target='#partners'
+        section.why-beacon
+            .why-head
+                h2 Почему Beacon?
+            .why
+                .row
+                    .col-md-6
+                        .row
+                            .col-sm-6
+                                .why__item
+                                    .why__item__img
+                                        .circle
+                                            .ico
+                                                img(src="img/target.png" alt="tracing system")
+                                    .why__item__title
+                                        h4 СИСТЕМА ТРЕККИНГА
+                                    .why__item__text
+                                        p Отслеживание любых перемещений с помощью смартфона
+                            .col-sm-6
+                                .why__item
+                                    .why__item__img
+                                        .circle
+                                            .ico
+                                                img(src="img/precision.png" alt="tracing system")
+                                    .why__item__title
+                                        h4 ТОЧНОСТЬ ОПРЕДЕЛЕНИЯ ДАННЫХ
+                                    .why__item__text
+                                        p Высочайшая точность - благодаря передовым технологиям
+                    .col-md-6
+                        .row
+                            .col-sm-6
+                                .why__item
+                                    .why__item__img
+                                        .circle
+                                            .ico
+                                                img(src="img/certificate.png" alt="tracing system")
+                                    .why__item__title
+                                        h4 СЕРТИФИКАЦИЯ
+                                    .why__item__text
+                                        p Наша продукция полностью сертифицирована на территории Украины
+                            .col-sm-3
+                                .why__item
+                                    .why__item__img
+                                        .circle
+                                            .ico
+                                                img(src="img/guarantee.png" alt="tracing system")
+                                    .why__item__title
+                                        h4 ГАРАНТИЯ
+                                    .why__item__text
+                                        p Чтим свою репутацию и гарантируем корректную работу наших устройств
+
+        // Modal
+        #partners.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+            .modal-dialog(role='document')
+                .modal-content
+                    .success-circle-modal
+                        .circle-modal
+                            .circle-modal__img
+                                //img(src="img/success.png" alt="success")
+                    .modal-text
+                        h4 Спасибо!
+                        .modal-text__desc
+                            p Специалист свяжется с Вами в ближайшее время!
+                    .modal-button
+                        button.btn(type='button', data-dismiss='modal') Назад

@@ -1,0 +1,72 @@
+.footer_nav {
+  padding-top: 28px;
+  @media screen and (max-width: 601px) {
+    padding-top: 0;
+  }
+}
+//.soccial-wrap {
+//  @media screen and (max-width: 375px) {
+//    display: flex;
+//    justify-content: center;
+//  }
+//}
+.soccial {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+    @media screen and (max-width: 375px) {
+      display: block;
+    }
+  }
+  padding-top: 10px;
+  @media screen and (max-width: 601px) {
+    padding-top: 0;
+  }
+  @media screen and (max-width: 375px) {
+    display: flex;
+    justify-content: center;
+    width: 26px;
+    flex-wrap: wrap;
+  }
+  a:nth-child(2) {
+    margin: 0 68px;
+    @media screen and (max-width: 697px) {
+      margin: 0 30px;
+    }
+    @media screen and (max-width: 479px) {
+      margin: 0 15px;
+    }
+    @media screen and (max-width: 375px) {
+      margin: 0 0px;
+    }
+  }
+}
+.social__img {
+  display: inline-block;
+  &_facebook {
+    height: 19px;
+    width: 9px;
+    background: url("../img/facebook.png"), no-repeat, center;
+    transition: 0.3s all ease;
+    &:hover {
+      background: url("../img/facebook-hh.png"), no-repeat, center;
+    }
+  }
+  &_instagram {
+    width: 21px;
+    height: 21px;
+    background: url("../img/instagram.png"), no-repeat, center;
+    &:hover {
+      background: url("../img/instagram-h.png"), no-repeat, center;
+    }
+  }
+  &_telegram {
+    width: 24px;
+    height: 23px;
+    background: url("../img/telegram.png"), no-repeat, center;
+    &:hover {
+      background: url("../img/telegram-h.png"), no-repeat, center;
+    }
+  }
+}

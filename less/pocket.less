@@ -1,0 +1,891 @@
+.beacon-head {
+  color: @black;
+  text-align: center;
+  font-family: PlayfairDisplay-Bold;
+  margin-bottom: 12px;
+}
+.beacon-head__title {
+  h1 {
+    font-size: 60px;
+    line-height: 0.73;
+    font-weight: bold;
+    margin-bottom: 15px;
+    @media screen and (max-width: 648px) {
+    font-size: 50px;
+    }
+    @media screen and (max-width: 455px) {
+      font-size: 40px;
+    }
+  }
+}
+.beacon-head__desc {
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  @media screen and (max-width: 648px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 455px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 425px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 13px;
+  }
+}
+
+//===================== pocket product style ==============
+.pocket-img {
+  display: flex;
+  justify-content: flex-end;
+  img {
+    width: 249px;
+    height: 501px;
+  }
+}
+.pocket {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.pocket-btn {
+  margin-bottom: 30px;
+  a {
+    font-family: LucidaGrande;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    text-align: center;
+    text-transform: uppercase;
+
+  }
+}
+.pocket-btn-wrap {
+  display: flex;
+  align-items: flex-end;
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.pocket-btn-wrap-mobile {
+  display: none;
+  @media screen and (max-width: 1023px) {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+
+.product-desc {
+  margin-top: 40px;
+  @media screen and (max-width: 777px) {
+    margin-top: 0px;
+  }
+}
+.product-desc-wrap {
+  @media screen and (max-width: 777px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.product-desc__title {
+  span {
+    font-family: PlayfairDisplay-Bold;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    text-align: left;
+    color: @black;
+  }
+  @media screen and (max-width: 777px) {
+    text-align: center;
+  }
+}
+
+.product-desc__spec__table {
+  width: 320px;
+  height: 212px;
+  tr {
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: left;
+    color: @light-gray;
+  }
+  .product-desc__spec__title {
+    font-weight: bold;
+    color: #000000;
+  }
+  @media screen and (max-width: 777px) {
+    width: 100%;
+  }
+}
+
+
+.product-desc__price__old {
+  span {
+    opacity: 0.6;
+    font-family: Montserrat-Bold;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: @red;
+    position: relative;
+    &:before {
+      content: '';
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      background-color: @red;
+    }
+    @media screen and (max-width: 425px) {
+      font-size: 40px;
+    }
+  }
+}
+.product-desc__price__new {
+  span {
+    //font-family: Montserrat;
+    font-family: Montserrat-Bold;
+    font-size: 70px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: @red;
+    @media screen and (max-width: 425px) {
+      font-size: 52px;
+    }
+  }
+  span:last-child {
+    margin-left: 30px;
+    font-size: 50px;
+  }
+}
+//======================.possibility =================
+.possibility {
+  margin-top: 175px;
+  @media screen and (max-width: 767px) {
+    margin-top: 65px;
+  }
+  .about {
+    h2 {
+      width: 408px;
+      //height: 100%;
+
+    }
+    @media screen and (max-width: 992px) {
+      h2 {
+        width: 100%;
+        text-align: center;
+      }
+      p {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+      }
+    }
+  }
+  .collaboration-offer {
+    height: 136px;
+    &:hover {
+      .circle {
+        background-color: @dark-yellow;
+      }
+    }
+  }
+  .offer__item {
+    width: 495px;
+    @media screen and (max-width: 475px) {
+      width: 380px;
+    }
+    @media screen and (max-width: 424px) {
+      width: 100%;
+      &:before {
+        width: 270px;
+      }
+    }
+  }
+  @media screen and (max-width: 475px) {
+    .offer__item__right {
+       padding-left: 0px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    margin-top: 30px;
+
+    .offer__item__right {
+      padding-left: 15px;
+    }
+  }
+  @media screen and (max-width: 424px) {
+
+    .offer__item__right {
+      h3 {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+//====================================
+.offer__item__right {
+  h3 {
+    height: 100%;
+    margin-top: 0;
+  }
+}
+
+.offer__item_beacon {
+  &:hover {
+    background-color: inherit;
+  }
+  .circle {
+    background-color: @dark-yellow;
+  }
+}
+.offer__item_doc {
+  margin-top: 0;
+  &:before {
+    top: 0;
+  }
+}
+
+//===================== info graphic ================
+.info-graphic {
+  margin-top: 130px;
+  margin-bottom: 100px;
+  @media screen and (max-width: 425px) {
+    margin-top: 55px;
+  }
+}
+.info-graphic__img {
+  img {
+    width: 249px;
+    height: 501px;
+  }
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+.info-graphic__img_pocket {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.info-graphic__left-wrap {
+  height: 501px;
+  @media screen and (max-width: 767px) {
+    height: 100px;
+  }
+}
+.info-graphic__left {
+  @media screen and (max-width: 767px) {
+    align-items: center;
+  }
+}
+.info-graphic__left_pocket {
+  .grafic__title {
+    @media screen and (max-width: 1130px) {
+      margin-left: 0;
+    }
+  }
+}
+.info-graphic {
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+  }
+  h4 {
+    font-family: PlayfairDisplay-Bold;
+    font-size: 25px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #2e2d2d;
+    @media screen and (max-width: 1023px) {
+      font-size: 18px;
+    }
+  }
+}
+.info-graphic__left, .info-graphic__right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.info-graphic__right_pocket {
+  @media screen and (max-width: 1130px) {
+    align-items: flex-end;
+    .grafic__title {
+      margin-left: 0;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    //align-items: stretch;
+  }
+}
+.grafic__title {
+  h4 {
+    position: relative;
+    &:after {
+      display: block;
+      content: '';
+      position: absolute;
+    }
+  }
+}
+.grafic__title_gps {
+  margin-left: 105px;
+  margin-top: 78px;
+  h4 {
+    &:after {
+      position: absolute;
+      right: -54px;
+      top: 40px;
+      background: url("../img/gpsArrow.png") no-repeat;
+      width: 121px;
+      height: 91px;
+      @media screen and (max-width: 767px) {
+        background:url("../img/arrowM.png") no-repeat;
+        right: 70px;
+        top: 5px;
+        height: 201px;
+      }
+    }
+
+    //&:after {
+    //  position: absolute;
+    //  right: 0;
+    //  top: 53px;
+    //  display: block;
+    //  content: '';
+    //  width: 122px;
+    //  height: 92px;
+    //  border-right: 2px dotted @dark-yellow;
+    //  border-bottom: 2px dotted @dark-yellow;
+    //  -webkit-border-radius: 0 0 100px 0;
+    //  -moz-border-radius: 0 0 100px 0;
+    //  border-radius: 0 0 100px 0;
+    //  transform: rotate(-90deg);
+    //}
+  }
+  @media screen and (max-width: 1023px) {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+.grafic__title_security {
+  width: 305px;
+  margin-left: 60px;
+  position: relative;
+  h4 {
+    &:after {
+      right: 0px;
+      top: -185px;
+      background:url("../img/securityArrow.png") no-repeat;
+      width: 241px;
+      height: 171px;
+      @media screen and (max-width: 1130px) {
+        right: -42px;
+        top: -178px;
+      }
+      @media screen and (max-width: 767px) {
+        background:url("../img/arrowM.png") no-repeat;
+        right: -165px;
+        top: 4px;
+      }
+
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  @media screen and (max-width: 767px) {
+    width: inherit;
+  }
+}
+
+
+.grafic__title_radar {
+  margin-top: -50px;
+  margin-left: 30px;
+  width: 270px;
+  h4 {
+    @media screen and (max-width: 767px) {
+      text-align: right;
+    }
+    &:after {
+      left: -238px;
+      top: 47px;
+      width: 241px;
+      height: 171px;
+      background:url("../img/securityArrow.png") no-repeat;
+      @media screen and (max-width: 767px) {
+        background:url("../img/arrowMR.png") no-repeat;
+        left: -34px;
+        top: -158px;
+        width: 127px;
+      }
+      //@media screen and (max-width: 425px) {
+      //  background:url("../img/arrowMR.png") no-repeat;
+      //  left: 26px;
+      //  top: -186px;
+      //  transform: scale(-1, 1) rotate(-26deg);
+      //}
+      //@media screen and (max-width: 375px) {
+      //  background:url("../img/arrowMR.png") no-repeat;
+      //  left: -15px;
+      //  top: -196px;
+      //  transform: scale(-1, 1) rotate(-26deg);
+      //}
+      //@media screen and (max-width: 320px) {
+      //  left: -45px;
+      //}
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    margin-left: 120px;
+    width: 166px;
+  }
+}
+.grafic__title_robbery {
+  width: 195px;
+  margin-left: 180px;
+  h4 {
+    @media screen and (max-width: 767px) {
+      width: 140px;
+    }
+    &:after {
+      background:url("../img/deviceArrow.png") no-repeat;
+      left: -336px;
+      top: -72px;
+      width: 376px;
+      height: 184px;
+      @media screen and (max-width: 1023px) {
+        background:url("../img/deviceArrow.png") no-repeat;
+        left: -80px;
+        top: 25px;
+        height: 54px;
+        width: 80px;
+      }
+      @media screen and (max-width: 767px) {
+        background:url("../img/arrowMR.png") no-repeat;
+        left: -88px;
+        top: -157px;
+        width: 127px;
+        height: 300px;
+      }
+      //@media screen and (max-width: 425px) {
+      //  background:url("../img/arrowMRB.png") no-repeat;
+      //  left: -89px;
+      //  top: -231px;
+      //  height: 252px;
+      //}
+    }
+  }
+  @media screen and (max-width: 767px) {
+    width: inherit;
+    margin-left: 147px;
+    text-align: right;
+  }
+}
+.grafic__title_device {
+  width: 270px;
+  margin-left: 130px;
+  h4 {
+    @media screen and (max-width: 767px) {
+      text-align: right;
+      width: 200px;
+    }
+    &:after {
+      background:url("../img/deviceArrow.png") no-repeat;
+      left: -336px;
+      top: -72px;
+      width: 376px;
+      height: 184px;
+      @media screen and (max-width: 1130px) {
+        left: -259px;
+        top: -24px;
+        width: 290px;
+      }
+      @media screen and (max-width: 767px) {
+        background:url("../img/arrowMRB.png") no-repeat;
+        left: -60px;
+        top: -231px;
+        height: 235px;
+      }
+      @media screen and (max-width: 425px) {
+
+      }
+      @media screen and (max-width: 375px) {
+
+      }
+      @media screen and (max-width: 320px) {
+
+      }
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    width: 185px;
+  }
+  @media screen and (max-width: 767px) {
+    width: inherit;
+    margin-left: 100px;
+  }
+}
+.grafic__title_wireless {
+  margin-left: -80px;
+  h4 {
+    &:after {
+      left: -93px;
+      top: -181px;
+      background:url("../img/wirelessArrow.png") no-repeat;
+      width: 241px;
+      height: 171px;
+      @media screen and (max-width: 767px) {
+        background:url("../img/arrowMRB.png") no-repeat;
+        left: -20px;
+        top: -261px;
+        height: 294px;
+      }
+      @media screen and (max-width: 425px) {
+
+      }
+      @media screen and (max-width: 375px) {
+
+      }
+      @media screen and (max-width: 320px) {
+
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    margin-left: 40px;
+  }
+}
+
+.info-graphic__right-wrap {
+  height: 690px;
+  @media screen and (max-width: 767px) {
+    height: 195px;
+  }
+}
+.info-graphic__left-wrap_pocket {
+  @media screen and (max-width: 1023px) {
+    height: 365px;
+  }
+  @media screen and (max-width: 767px) {
+    height: 100px;
+  }
+}
+.info-graphic__right-wrap_pocket {
+  @media screen and (max-width: 1023px) {
+    height: 470px;
+  }
+  @media screen and (max-width: 767px) {
+    height: 195px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+//===================================== TARGET ==================================
+.target {
+  margin-top: 160px;
+  @media screen and (max-width: 550px) {
+    overflow: hidden;
+  }
+  @media screen and (max-width: 550px) {
+    margin-top: 60px;
+  }
+}
+.targets__item {
+  @media screen and (max-width: 991px) {
+    //display: flex;
+    //justify-content: space-between;
+  }
+}
+.targets__item_coin {
+  padding-top: 125px;
+  @media screen and (max-width: 991px) {
+    padding-top: 10px;
+  }
+}
+.targets__item__img_tv {
+  img {
+    margin-left: -143px;
+    margin-bottom: -65px;
+    @media screen and (max-width: 320px) {
+      margin-left: -103px;
+      margin-bottom: -44px;
+    }
+    @media screen and (max-width: 425px) {
+      margin-left: -81px;
+    }
+  }
+}
+.targets__item__img_coin {
+  img {
+    width: 190px;
+    height: 190px;
+    @media screen and (max-width: 425px) {
+      margin-left: -25px;
+    }
+  }
+}
+.target__title {
+  h2 {
+    font-family: PlayfairDisplay-Bold;
+    font-size: 60px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: center;
+    color: @black;
+    @media screen and (max-width: 767px) {
+      font-size: 36px;
+    }
+    @media screen and (max-width: 425px) {
+      font-size: 31px;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 26px;
+    }
+  }
+}
+.targets__item__title {
+  span {
+    width: 391px;
+    display: inline-block;
+    font-family: PlayfairDisplay-Bold;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    text-align: left;
+    color: @black;
+    @media screen and (max-width: 465px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 18px;
+      width: 100%;
+    }
+  }
+
+}
+.targets__item__desc {
+  p {
+    width: 224px;
+    height: 289px;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: left;
+    color: @light-gray;
+    @media screen and (max-width: 991px) {
+      height: 100%;
+    }
+    @media screen and (max-width: 425px) {
+      width: 100%;
+    }
+  }
+}
+.targets__item-wrap {
+  display: flex;
+  justify-content: flex-end;
+  @media screen and (max-width: 991px) {
+    justify-content: center;
+  }
+  @media screen and (max-width: 465px) {
+    padding-left: 25px;
+  }
+  @media screen and (max-width: 375px) {
+    padding-left: 15px;
+  }
+}
+
+//========================= PROBLEMS of CHINA DEVICES ===================
+.problems__title {
+  h2 {
+    padding-bottom: 50px;
+    font-family: PlayfairDisplay-Bold;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: @black;
+    @media screen and (max-width: 425px) {
+      font-size: 31px;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 26px;
+    }
+  }
+}
+.problems {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .why__item {
+    width: 225px;
+    z-index: 2;
+  }
+  .why__item__title {
+    h4 {
+      font-family: PlayfairDisplay-Bold;
+      font-size: 12px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 2.4px;
+      text-align: center;
+      color: @black;
+
+    }
+  }
+}
+.china {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 103%;
+  top: -22px;
+  font-family: PlayfairDisplay-Bold;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  font-size: 168px;
+  opacity: 0.1;
+  color: @dark-yellow;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  span {
+    transform: scaleX(1.8);
+    @media screen and (max-width: 700px) {
+      transform: rotate(45deg) scaleX(1.8);
+    }
+    @media screen and (max-width: 472px) {
+      transform: rotate(70deg) scaleX(2.8);
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    font-size: 112px;
+  }
+  @media screen and (max-width: 700px) {
+    font-size: 112px;
+
+  }
+}
+
+
+//======================= market section ==================
+.market-butoons {
+  margin-top: 220px;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
+}
+
+.iphone_img-wrap {
+  @media screen and (max-width: 768px) {
+    .iphone_img {
+      margin-left: 0px;
+    }
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (max-width: 425px) {
+    margin-top: 40px;
+  }
+}
+.iphone_img {
+  margin-left: 60px;
+
+  .iphone{
+    width: 278px;
+    height: 576px;
+  }
+  position: relative;
+  .company-img {
+    z-index: 10;
+    position: absolute;
+    left: 65px;
+    top: 208px;
+  }
+}
+.market__android, .market__iphone {
+  img {
+    width: 349px;
+    height: 110px;
+    @media screen and (max-width: 425px) {
+      width: 270px;
+      height: 80px;
+    }
+  }
+}
+.market__android {
+  margin-bottom: 19px;
+}
+
+.market-butoons-wrap {
+  @media screen and (max-width: 425px) {
+    margin-bottom: 35px;
+  }
+}

@@ -1,0 +1,275 @@
+main
+    .container
+        .beacon-head
+            .beacon-head__title
+                h1.product-title Beacon Car
+            .beacon-head__desc
+                span Противоугонное средство слежения за перемещением автомобиля
+
+        section
+            .row
+                .pocket-wrap
+                    .col-md-8.col-sm-6
+                        .pocket
+                            .pocket-item
+                                .car-img
+                                    img(src="../img/car.png" alt="Beackon Pocket")
+                            .pocket-item
+                                .pocket-btn-wrap
+                                    .pocket-btn
+                                        a.btn(href="#buy-form") Заказать сейчас
+
+                    .col-md-4.col-sm-6
+                        .product-desc-wrap
+                            .product-desc
+                                .product-desc__title
+                                    span Характеристики
+                                .product-desc__spec
+                                    table.product-desc__spec__table
+                                        tr
+                                            td.product-desc__spec__title Напряжение питания
+                                            td 8-32 В
+                                        tr
+                                            td Ток потребления
+                                            td 32 мА
+                                        tr
+                                            td Ток потребления (мах)
+                                            td 250 мА
+                                        tr
+                                            td Аккумулятор
+                                            td 220 мАч
+                                        tr
+                                            td Ток коммутации
+                                            td 10 А
+                                        tr
+                                            td Дискретный вход, до
+                                            td 32 В
+                                        tr
+                                            td Габариты
+                                            td 29*29*52 мм
+                                        tr
+                                            td Вес
+                                            td 30 гр
+
+                                .product-desc__price
+                                    .product-desc__price__old
+                                        span 230
+                                    .product-desc__price__new
+                                        span 200
+                                        span uah
+            .pocket-btn-wrap.pocket-btn-wrap-mobile
+                .pocket-btn
+                    a.btn(href="#buy-form") Заказать сейчас
+
+        section
+            .possibility
+                .row
+                    .col-md-6
+                        .about-wrap
+                            .about
+                                h2
+                                    | Возможности
+                                    //br
+                                    | устройства
+                                p
+                                    | Устройство наблюдения за подвижными объектами "Becon Car" применяется для решения задач навигации, дистанционного управления и контроля за транспортным средством. Устройство наблюдения предназначено для установки на любой движущийся или удаленный,стационарный объект с целью определения координат, скорости, направления движения и других данных. А так же для управления исполнительными устройствами.
+                    .col-md-6
+                        .offer-wrap
+                            .offer
+                                .offer__item.collaboration-offer
+                                    .offer__item__left
+                                        .circle
+                                            .pen.ico
+                                                img(src="img/webcam.png" alt="pen")
+                                    .offer__item__right
+                                        h3 Отслеживание перемещения автомобиля
+                                .offer__item.collaboration-offer.offer__item_doc
+                                    .offer__item__left.doc-title
+                                        .circle
+                                            .pen.ico
+                                                img(src="img/x.png" alt="pen")
+                                    .offer__item__right.doc-text
+                                        h3 Возможность заглушить двигатель при краже автомобиля
+                                .offer__item.collaboration-offer.offer__item_doc
+                                    .offer__item__left.doc-title
+                                        .circle
+                                            .pen.ico
+                                                img(src="img/telplay.png" alt="pen")
+                                    .offer__item__right.doc-text
+                                        h3 Управление с помощью телефона
+        section.info-graphic
+            .row
+                .col-sm-4
+                    .info-graphic__left-wrap.info-graphic__left-wrap_car
+                        .info-graphic__left
+                            .grafic__title.grafic__title_gps
+                                h4 Высокая точность определения координат
+                            .grafic__title.grafic__title_non-visible
+                                h4 Незаметность для злоумышленников
+                            .grafic__title.grafic__title_security
+                                h4 Простота монтажа
+                .col-sm-4
+                    .info-graphic__img.info-graphic__img_car
+                        .img-cont
+                            img(src="img/car.png" alt="Beacon car")
+                .col-sm-4
+                    .info-graphic__right-wrap.info-graphic__right-wrap_car
+                        .info-graphic__right.info-graphic__right_car
+                            .grafic__title.grafic__title_radar.grafic__title_radar_car
+                                h4 Работа в режиме “маячка”
+                            .grafic__title.grafic__title_robbery.grafic__title_wireless_car
+                                h4 Беспроводная настройка
+                            //.grafic__title.grafic__title_device
+                            //    h4 Большой объём заряда устройства
+                            .grafic__title.grafic__title_wireless.grafic__title_security-car
+                                h4 Работа в режиме "охраны"
+
+        section#buy-form
+            include form
+
+        section
+            .target
+                .target__title
+                    h2 Кому будет полезно?
+                .target__body.target__body_car
+                    .row
+                        .targets.car-targets
+                            .col-md-6
+                                .targets__item-wrap
+                                    .targets__item
+                                        .targets__item__img.targets__item__img_key
+                                            .img-cont
+                                                img(src="img/duplicate-dodge-key.png" alt="key")
+                                        .targets__item__text.targets__item__text_car
+                                            .targets__item__title
+                                                span Владельцам автомобилей
+                                            .targets__item__desc.targets__item__desc_car
+                                                p Используя
+                                                    span
+                                                        | Beacon car
+                                                    |  в процессе эксплуатации автомобиля Вы не только можете обезопасить себя от угона Вашего транспортного средства, но и имеете возможность полностью отслеживать его перемещение в течении длительного срока.
+                            .col-md-6
+                                .targets__item-wrap
+                                    .targets__item.targets__item_coin
+                                        .targets__item__img.targets__item__img_coin
+                                            .img-cont
+                                                img(src="img/2-euro-coin-fi-serie-1.png" alt="tv")
+                                        .targets__item__text.targets__item__text_car
+                                            .targets__item__title
+                                                span Владельцам бизнеса
+                                            .targets__item__desc.targets__item__desc_car
+                                                p
+                                                    span Beacon car
+                                                    | поможет предпринимателям отслеживать эффективность работы сотрудников и техники, задействованных на их предприятии.
+
+        section
+            .problems__title
+                h2 Проблемы китайских устройств
+            .problems
+                .why__item
+                    .why__item__img
+                        .circle
+                            .ico
+                                img(src="img/store.png" alt="low quality")
+                    .why__item__title
+                        h4
+                            | НИЗКОЕ
+                            br
+                            | КАЧЕСТВО
+                            br
+                            |  ПРОДУКЦИИ
+
+                .why__item
+                    .why__item__img
+                        .circle
+                            .ico
+                                img(src="img/precision.png" alt="GPS low quality")
+                    .why__item__title
+                        h4
+                            | СБОЙ
+                            br
+                            | В ТОЧНОСТИ
+                            br
+                            | ОПРЕДЕЛЕНИЯ ДАННЫХ
+
+                .why__item
+                    .why__item__img
+                        .circle
+                            .ico
+                                img(src="img/tellow.png" alt="low cicle")
+                    .why__item__title
+                        h4
+                            | КОРОТКИЙ
+                            br
+                            | ЦИКЛ
+                            br
+                            | ЭНЕРГОСБЕРЕЖЕНИЯ
+
+                .why__item
+                    .why__item__img
+                        .circle
+                            .ico
+                                img(src="img/cross.png" alt="cross")
+                    .why__item__title
+                        h4
+                            | ОГРАНИЧЕНЫЙ
+                            br
+                            | НАБОР
+                            br
+                            | ВОЗМОЖНОСТЕЙ
+
+                .why__item
+                    .why__item__img
+                        .circle
+                            .ico
+                                img(src="img/tools.png" alt="tools")
+                    .why__item__title
+                        h4
+                            | РАБОТА
+                            br
+                            | ТОЛЬКО В
+                            br
+                            | ОРГАНИЧЕНОЙ ЗОНЕ
+
+                .china
+                    span Китай
+
+        section
+            include form
+
+
+        section
+            .get-it
+                .row
+                    .col-sm-6
+                        .iphone_img-wrap
+                            .iphone_img
+                                .img-cont
+                                    img.iphone(src="img/iphoneX.png" alt="telephone app")
+                                .company-img
+                                    img(src="img/photo-2018-03-13-15-02-55.png" alt="company img")
+                    .col-sm-6
+                        .market-butoons-wrap
+                            .market-butoons
+                                .market__android
+                                    a(href='https://itunes.apple.com/ru/app/geliosmobile/id999837601?mt=8', target='_blank')
+                                        img(src='img/android.png', alt='Get on Google Play')
+                                .market__iphone
+                                    a(href='https://play.google.com/store/apps/details?id=ru.soft.gelios.mobile&hl=ru', target='_blank')
+                                        img(src='img/apple.png', alt='Get on Google Play')
+
+        //Modal
+        #callMessage.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+            .modal-dialog(role='document')
+                .modal-content
+                    .success-circle-modal
+                        .circle-modal
+                            .circle-modal__img
+                                //img(src="img/success.png" alt="success")
+                    .modal-text
+                        h4 Спасибо!
+                        .modal-text__desc
+                            p Спасибо! Мы отправим ваш заказ в течении дня.
+                            //p Специалист свяжется с Вами в ближайшее время!
+                    .modal-button
+                        button.btn(type='button', data-dismiss='modal') Назад
