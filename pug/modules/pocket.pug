@@ -1,6 +1,6 @@
 main
     .container
-        .beacon-head
+        .beacon-head#our-products
             .beacon-head__title
                 h1.product-title Beacon Pocket
             .beacon-head__desc
@@ -53,9 +53,9 @@ main
 
                                 .product-desc__price
                                     .product-desc__price__old
-                                        span 230
+                                        span 3000
                                     .product-desc__price__new
-                                        span 200
+                                        span 2860
                                         span uah
             .pocket-btn-wrap.pocket-btn-wrap-mobile
                 .pocket-btn
@@ -74,7 +74,7 @@ main
                                 p
                                     | Устройство наблюдения за подвижными объектами "Beacon Pocket" применяется для решения задач навигации и контроля за удаленным объектом.
                                     br
-                                    | Устройство наблюдения предназначен для установки на любой движущийся или удаленный стационарный объект с целью определения координат, скорости, направления движения и инших данных, и передачи этих данных в диспетчерский центр.
+                                    | Устройство наблюдения предназначен для установки на любой движущийся или удаленный стационарный объект с целью определения координат, скорости, направления движения и других данных, и передачи этих дынных в диспетчерский центр.
                     .col-md-6
                         .offer-wrap
                             .offer
@@ -82,21 +82,24 @@ main
                                     .offer__item__left
                                         .circle
                                             .pen.ico
-                                                img(src="img/webcam.png" alt="pen")
+                                                .webcam
+                                                //img(src="img/webcam.png" alt="pen")
                                     .offer__item__right
                                         h3 Отслеживание перемещения человека
                                 .offer__item.collaboration-offer.offer__item_doc.offer__item_beacon
                                     .offer__item__left.doc-title
                                         .circle
                                             .pen.ico
-                                                img(src="img/telkey.png" alt="pen")
+                                                .telkey
+                                                //img(src="img/telkey.png" alt="pen")
                                     .offer__item__right.doc-text
                                         h3 Возможность отслеживания компьютера (вместе с powerbank) или телефона в случае кражи
                                 .offer__item.collaboration-offer.offer__item_doc
                                     .offer__item__left.doc-title
                                         .circle
                                             .pen.ico
-                                                img(src="img/telplay.png" alt="pen")
+                                                .telplay
+                                                //img(src="img/telplay.png" alt="pen")
                                     .offer__item__right.doc-text
                                         h3 Управление с помощью приложения
         section.info-graphic
@@ -124,7 +127,7 @@ main
                             .grafic__title.grafic__title_wireless
                                 h4 Беспроводная настройка
 
-        section
+        section#partner-form
             include form
 
         section
@@ -157,7 +160,7 @@ main
                                             .targets__item__desc
                                                 p Beacon Pocket поможет предпринимателям отслеживать эффективность работы сотрудников и техники, задействованных на их предприятии.
 
-        section
+        section#info
             .problems__title
                 h2 Проблемы китайских устройств
             .problems
@@ -165,7 +168,8 @@ main
                     .why__item__img
                         .circle
                             .ico
-                                img(src="img/store.png" alt="low quality")
+                                .store
+                                //img(src="img/store.png" alt="low quality")
                     .why__item__title
                         h4
                             | НИЗКОЕ
@@ -178,7 +182,8 @@ main
                     .why__item__img
                         .circle
                             .ico
-                                img(src="img/precision.png" alt="GPS low quality")
+                                .precision
+                                //img(src="img/precision.png" alt="GPS low quality")
                     .why__item__title
                         h4
                             | СБОЙ
@@ -191,7 +196,8 @@ main
                     .why__item__img
                         .circle
                             .ico
-                                img(src="img/tellow.png" alt="low cicle")
+                                .tellow
+                                //img(src="img/tellow.png" alt="low cicle")
                     .why__item__title
                         h4
                             | КОРОТКИЙ
@@ -204,7 +210,8 @@ main
                     .why__item__img
                         .circle
                             .ico
-                                img(src="img/cross.png" alt="cross")
+                                .cross
+                                //img(src="img/cross.png" alt="cross")
                     .why__item__title
                         h4
                             | ОГРАНИЧЕНЫЙ
@@ -217,7 +224,8 @@ main
                     .why__item__img
                         .circle
                             .ico
-                                img(src="img/tools.png" alt="tools")
+                                .tools
+                                //img(src="img/tools.png" alt="tools")
                     .why__item__title
                         h4
                             | РАБОТА

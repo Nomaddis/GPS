@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
 
+    var numberOfOreder = 0;
 
     /**
      * Plugin for correct zoom images
@@ -50,9 +51,9 @@ $(document).ready(function(){
                 let partnersInput = [$(".form-input___name input"), $(".form-input___surname input"), $(".form-input___telephone input")];
                 let partners = [$(".form-input___name input").val(), $(".form-input___surname input").val(),$(".form-input___telephone input").val()];
 
-
-                let telData = "Стать партнёром:" + "%0A " + "Имя: " + partners[0] + "%0A " + "Фамилия: " + partners[1] + " %0A " + "Телефон: " + partners[2];
-                let telUrl = 'https://api.telegram.org/bot570439961:AAEFRlvwuYcOM6r8wjXLwZH1jFIA_Ih-I20/sendMessage?chat_id=-267536696&text=';
+                numberOfOreder = numberOfOreder + 1;
+                let telData ="Стать партнёром:" + "%0A " + "Имя: " + partners[0] + "%0A " + "Фамилия: " + partners[1] + " %0A " + "Телефон: " + partners[2];
+                let telUrl = 'https://api.telegram.org/bot570439961:AAEFRlvwuYcOM6r8wjXLwZH1jFIA_Ih-I20/sendMessage?chat_id=-267536696&text=' + telData;
                 sendAjaxForm(telUrl);
 
                 $('#form_for_partners')[0].reset();// clear all form input after form validation
@@ -111,7 +112,7 @@ $(document).ready(function(){
                 let productName = $(".product-title").text();
                 //telegram message
                 let telData = "Заказ " + productName + " с сайта:" + "%0A " + "Имя: " + buyWithDelivery[0] + "%0A " + "Телефон: " + buyWithDelivery[1] + " %0A " + "Отделение: " + buyWithDelivery[2];
-                let telUrl = 'https://api.telegram.org/bot570439961:AAEFRlvwuYcOM6r8wjXLwZH1jFIA_Ih-I20/sendMessage?chat_id=-267536696&text=';
+                let telUrl = 'https://api.telegram.org/bot570439961:AAEFRlvwuYcOM6r8wjXLwZH1jFIA_Ih-I20/sendMessage?chat_id=-267536696&text=' + telData;
                 sendAjaxForm(telUrl);
 
 
@@ -151,6 +152,9 @@ $(document).ready(function(){
                     required: "Поле Телефон обязательно к заполнению",
                     digits: "Введите цифры",
                     minlength: "Должно быть не менее 10 цифр"
+                },
+                department: {
+                    required: "Поле обязательно к заполнению"
                 }
             }
         });

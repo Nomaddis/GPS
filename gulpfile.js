@@ -54,4 +54,11 @@ gulp.task('babel', () =>
         }))
         .pipe(gulp.dest('web/js/babel'))
 );
+// var content = ['web/js/*.js', 'web/*.html'];
+// var css = ['web/css/*.css'];
+//
+// var options = {
+//     // Will write purified CSS to this file.
+//     output: './dist/purified.css'
+// };
 gulp.task('default', ['browser-sync', 'watch']);
